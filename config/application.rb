@@ -35,12 +35,12 @@ module HelloRailsBackEnd
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
-    config.middleware.insert_before 0, Rack::Cors do
+    config.middleware.insert_before 0, Rack::Corse do
       allow do
-        origins 'http://localhost:3001'
+        origins 'http://127.0.0.1:3000'
         resource '*',
         headers: :any,
-        method: :get
+        method: [:get, :post, :patch, :delete, :options, :put]
       end
     end
   end
