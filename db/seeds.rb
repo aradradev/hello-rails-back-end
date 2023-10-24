@@ -10,7 +10,8 @@ greetings = [
     'Hi there!',
     'Greetings from Rails!',
     'Welcome to the API!',
-    'Good day!'
+    'Good day!',
+    'Good weekend!'
 ]
 greetings.each do |msg|
     Greeting.create(text: msg)
