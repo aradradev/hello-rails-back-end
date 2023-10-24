@@ -40,7 +40,7 @@ module HelloRailsBackEnd
         origins 'http://localhost:3001'
         resource '*',
         headers: :any,
-        method: [:get, :post, :patch, :delete, :options, :put]
+        method: :get
       end
     end
   end
