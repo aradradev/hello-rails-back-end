@@ -42,7 +42,7 @@ Style/FrozenStringLiteralComment:
   EnforcedStyle: never
 
 Layout/EndOfLine:
-  Enabled: false
+  Enabled: fals
 Layout/HashAlignment:
   EnforcedColonStyle: key
 Layout/ExtraSpacing:
